@@ -23,7 +23,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
      }, []);
 
      if (isAuthenticated === null) {
-          return <div>Loading...</div>; // or a loading spinner
+          return <div>Loading...</div>; 
      }
 
      return isAuthenticated ? <>{children}</> : <Navigate to="/login" />;
