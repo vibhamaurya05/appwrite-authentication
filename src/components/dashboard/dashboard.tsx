@@ -44,11 +44,19 @@ const Dashboard: React.FC = () => {
     }
 
     return (
-        <div>
-            <h1>Welcome, {userinfo.name}</h1>
-            <p>{userinfo.email}</p>
-            <Button onClick={handleLogout}>Logout</Button>
+        <div className='  text-center py-4'>
+            <h1 className='font-bold text-rose-400 text-4xl'>Welcome, {userinfo.name}</h1>
+            <p className='mt-4 text-2xl'>{userinfo.email}</p>
+            <Button onClick={handleLogout} className='bg-[#f57e7e] text-2xl h-14 mt-4' >Logout</Button>
         </div>
+
+        /************github user board***********/
+
+
+
+
+
+        
     );
 };
 
